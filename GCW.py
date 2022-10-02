@@ -20,7 +20,7 @@ def getNewWord():
 
 getNewWord()
 
-m = ("https://www.dictionary.com/browse/",randomWord)
+m = ("https://www.google.co.uk/search?q=",randomWord," meaning")
 url = "".join(m)
 
 chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s --incognito'
