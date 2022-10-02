@@ -1,6 +1,6 @@
 import random
 import webbrowser
-randomWord = "deez nuts"
+randomWord = "place holder"
 
 def load_words():
     with open('words.txt') as word_file:
