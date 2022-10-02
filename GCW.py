@@ -1,9 +1,14 @@
+# SpenGUI 02/10/22 17:18pm
+# run to get a random word from words.txt and display it in the google chrome brower
+
+# PSA you NEED chrome installed for this code to work
+
 import random
 import webbrowser
 randomWord = "place holder"
 
 def load_words():
-    with open('words.txt') as word_file:
+    with open('words.txt') as word_file:  # you NEED to down load the words and put them in the same folder for this to work
         valid_words = set(word_file.read().split())
 
 def getNewWord():
@@ -15,8 +20,8 @@ def getNewWord():
 
 getNewWord()
 
-marge = ("https://www.dictionary.com/browse/",randomWord)
-url = "".join(marge)
+m = ("https://www.dictionary.com/browse/",randomWord)
+url = "".join(m)
 
 chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s --incognito'
 
